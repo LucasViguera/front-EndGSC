@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  app-root {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
