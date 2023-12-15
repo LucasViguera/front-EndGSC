@@ -1,0 +1,28 @@
+<form [formGroup]="formularioSuscripcion" (ngSubmit)="onSubmit()">
+    <label>Nombre:</label>
+    <input formControlName="nombre" />
+  
+    <label>Apellido:</label>
+    <input formControlName="apellido" />
+  
+    <label>Email:</label>
+    <input formControlName="email" />
+  
+    <label>Confirmar Email:</label>
+    <input formControlName="confirmarEmail" />
+  
+    <label>Teléfono:</label>
+    <input formControlName="telefono" />
+  
+    <label>Contraseña:</label>
+    <input type="password" formControlName="contrasenia" />
+  
+    <label>Recibir Notificaciones:</label>
+    <input type="checkbox" formControlName="recibirNotificaciones" />
+  
+    <label>
+      <input type="checkbox" formControlName="aceptarTerminos" /> Aceptar Términos y Condiciones
+    </label>
+  
+    <button type="submit" [disabled]="!formularioSuscripcion.valid">Enviar</button>
+  </form>
